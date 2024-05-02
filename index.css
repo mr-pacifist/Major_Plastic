@@ -1,0 +1,123 @@
+
+
+/* ============== common css ============== */
+
+::-webkit-scrollbar{
+    width: 0;
+}
+.btn{
+    background: #00bc13;
+    color: #ffffff;
+    transition: .5s;
+}
+.btn:hover{
+    background: #019c10;
+    color: #ffffff;
+}
+
+body{
+   background: #ededed; 
+}
+
+/*========== Header style ============*/
+header{
+    background: #ffffff;
+    
+}
+
+
+
+/* -------------Navigation style----------- */
+.nav-link{
+    color: #808080;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link.active,.nav-link:hover{
+    color: #1d1d1d;
+}
+
+@media (min-width:990px) {
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left:50%;
+        width: 0;
+        transform: translateX(-50%);
+        transition: .3s ease-in-out;
+        visibility:hidden;
+        height: 2px;
+        background-color: #00bc13;
+    
+    }
+    .nav-link:hover::before,.nav-link.active::before{
+        width: 100%;
+        visibility:visible;
+    }
+    
+}
+
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus,.btn-close:focus{
+    box-shadow: none;
+    outline: none;
+    
+}
+
+/*
+========================================         
+            Banner style 
+========================================
+*/
+
+.banner{
+    margin-top: 100px;
+    position: relative;
+}
+
+.banner_img{
+    width: 100%;
+    border-radius: 10px;
+}
+.banner_text{ 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    background: rgba(250, 250, 250, 0.6);
+    padding: 20px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.banner_text h1{
+    font-size: 25px;
+    font-weight: 700;
+}
+.banner_text p{
+    font-weight:500;
+}
+.banner_text span{
+    color: #00bc13;
+}
+/*
+========================================         
+            slider style 
+========================================
+
+*/
+.inner_slider{
+    background: #ffffff;
+    
+}
+#owl-demo .item{
+    margin: 3px;
+  }
+  #owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }

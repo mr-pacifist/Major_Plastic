@@ -124,7 +124,6 @@ header{
     height: auto;
   }
 
-
 /*
 ========================================         
             strength style 
@@ -134,9 +133,24 @@ header{
 .inner_strength{
     background: url(img/strength_bg.jpg) center;
     border-radius: 5px;
+    position: relative;
+    z-index: -3;
 }
-
-
+.inner_strength::before{
+    position: absolute;
+    content: "";
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(148, 148, 148, 0.4);
+    z-index: -1;
+}
+.strength_text{
+    z-index: 10;
+    color: white;
+}
 /*
 ========================================         
             Footer style 

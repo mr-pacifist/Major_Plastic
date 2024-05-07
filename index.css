@@ -115,6 +115,19 @@ header{
     background: #ffffff;
     
 }
+.slider_heading{
+    position: relative;
+}
+.slider_heading::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 300px;
+    height: 4px;
+    background-color: #00bc13;
+}
 #owl-demo .item{
     margin: 3px;
   }
@@ -151,12 +164,52 @@ header{
     z-index: 10;
     color: white;
 }
+.strength_heading{
+    position: relative;
+}
+.strength_heading::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 300px;
+    height: 4px;
+    background-color: #00bc13;
+}
+
+/*
+========================================         
+            top sell product style 
+========================================
+*/
+.top_selling_products .card {
+    max-width: 450px;
+    width: 100%;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.top_selling_products .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.top_selling_products .content {
+    padding: 20px;
+}
+
+
 /*
 ========================================         
             Footer style 
 ========================================
-
 */
+
 .footer_heading{
     background: #00bc13;
 }
@@ -172,7 +225,25 @@ header{
     font-weight: 500;
 }
 
+/*
+========================================         
+            Top products style 
+========================================
+*/
 
-
+.top_product_heading h3{
+    position: relative;
+}
+.top_product_heading h3::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 300px;
+    height: 4px;
+    background-color: #00bc13;
+}
+    
 
 
